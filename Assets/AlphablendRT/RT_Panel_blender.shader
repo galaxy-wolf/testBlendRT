@@ -12,7 +12,7 @@ Shader "Unlit/RT_Panel_blender"
         Pass
         {
             ZTest Always
-            Blend One OneMinusSrcAlpha
+            Blend One SrcAlpha
             CGPROGRAM
             #pragma vertex vert
             #pragma fragment frag

@@ -13,7 +13,7 @@ Shader "Unlit/NewUnlitShader"
         Pass
         {
             ZTest Always
-            Blend SrcAlpha OneMinusSrcAlpha,OneMinusDstAlpha One
+            Blend SrcAlpha OneMinusSrcAlpha, Zero OneMinusSrcAlpha
             CGPROGRAM
             #pragma vertex vert
             #pragma fragment frag
